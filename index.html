@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+  <title>angular-spotify demo!</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/Fonts/raleway/Raleway-Black.ttf" />
+ 
+</head>
+<body ng-controller="MainController">
+<div class = "container">
+  
+   <div class="boxBorder">
+      <img src="assets/Images/gl-logo@2x.png" class="logo"/>
+     <img src="assets/Images/hero-img@2x.png" class="musicImage"/>
+     <label class="logoText">Powered by Spotify</label>
+   </div>
+   
+   
+   <div class="search" style="padding-left:200px;"> 
+      <input type="text" class="form-control input-sm" maxlength="64" ng-model="searchartist"  placeholder="Search for an artist or an album title">
+       <button type="submit" class="btn btn-primary btn-sm" ng-click="searchArtist() || searchAlbum()" >SEARCH</button>
+   </div>
+   <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+    <ul>
+    <li ng-repeat="artist in artists">
+      <a  ng-href="{{artist.external_urls.spotify}}" target="_blank">
+       <div class="thumbnail text-center category">
+        <img class="img-responsive caption" ng-src="{{artist.images[0].url}}" alt="">
+        <img src="assets/Images/artist-icon@2x.png" />
+        {{artist.name}}
+       </div> 
+        
+      </a>
+    </li>
+  </ul>
+  
+  <ul>
+    <li ng-repeat="album in albums">
+      <a  ng-href="{{album.external_urls.spotify}}" target="_blank">
+       <div class="thumbnail text-center category">
+        <img class="img-responsive caption" ng-src="{{album.images[0].url}}" alt="">
+        <img src="assets/Images/album-icon@2x.png" />
+        {{album.name}}
+       </div> 
+        
+      </a>
+    </li>
+  </ul>
+  
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+  
+  <div ng-show="!searchartist" style="padding-left:450px;">
+    <img src="assets/Images/Magnify@2x.png" style="height: 150px;width: 150px;"/>
+  </div>
+  <div ng-show="!searchartist" style="padding-left:390px;font-size: 25px;color:#6d5c5c;">
+    <label>Your results will appear here.</label>
+  </div>
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script src="angular-spotify.js"></script>
+<script src="main.controller.js"></script>
+
+</body>
+</html>
