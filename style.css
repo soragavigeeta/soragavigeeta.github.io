@@ -1,0 +1,134 @@
+@CHARSET "ISO-8859-1";
+body{
+  font-family: Open Sans;
+  font-size: 12px;
+  background-color: #555;
+}
+
+
+ul {
+   list-style: none;
+}
+
+
+
+/* Search styles */
+#search {
+    float: right;
+    margin-top: 9px;
+    width: 250px;
+}
+
+.search {
+    padding: 5px 0;
+    width: 230px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    float: left;
+    line-height: 22px;
+}
+
+.search input {
+    width: 700px;
+    margin-left: 0px;
+    border-radius: 32px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.btn {
+    height: 42px;
+    position: absolute;
+    left: 750px;
+    top: 5px;
+    border-radius: 32px;
+    width: 140px;
+    margin-top: 4px;
+    background-color: #c05989;
+    border-color: #ca4282;
+}
+
+.btn.focus, .btn:focus{
+	background-color: #c05989;
+    border-color: #ca4282;
+}
+
+.btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    background-color: #c05989;
+    border-color: #ca4282;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    background-color: #c05989;
+    border-color: #ca4282;
+}
+
+.boxBorder {
+	box-sizing: border-box;
+	border: 1px solid #d3d3d3;	
+	margin: 5px 5px 5px 5px;
+	background-color: #c05989;
+    border-color: #ca4282;
+}
+
+/* Display Image Styles */
+
+.caption {
+   font-family: "raleway";
+	font-size: 12px;
+	color: black;
+	font-weight: normal;
+	padding: 0px;
+}
+
+.thumbnail {
+        border: 0 none;
+        box-shadow: none;
+        margin:20px;
+        max-width: 20%;
+        height: 350px;
+}
+
+.thumbnail .caption {
+    padding: 0px;
+    color: #333;
+}
+
+.category {
+position:relative;
+display: inline-block;
+float:left;
+padding:10px;
+}
+
+.logo{
+	height: 100px;
+	width: 100px;
+	position:absolute;
+	top:30px;
+	left:200px;
+	float:left;
+}
+
+.logoText{
+	height: 100px;
+	width: 200px;
+	position:absolute;
+	top:50px;
+	right:200px;
+	float:right;
+	font-family: "raleway";
+	font-size: 20px;
+	color: white;
+	font-weight: normal;
+}
+
+.musicImage{
+	height: 700px;
+	width: 900px;
+	padding-left:200px;
+}
+    
+ 
