@@ -9,3 +9,5 @@ main.controller.js: Angular controller to search given artist and albums from sp
 index.html: HTML UI file.
 
 style.css: Consists of styles used.
+
+Accessing in any browser: soragavigeeta.github.io
